@@ -10,7 +10,6 @@ public class p10773 {
 		Stack<Integer> st = new Stack<>();
 		
 		int k = input.nextInt();
-
 		int n = 0;
 		for(int i = 0; i < k; i++) {
 			n = input.nextInt();
