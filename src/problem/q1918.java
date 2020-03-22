@@ -23,10 +23,8 @@ public class q1918 {
 				}
 				st.pop();
 			}
-			else if(arr[i].equals("+") ||
-					arr[i].equals("-") ||
-					arr[i].equals("*") ||
-					arr[i].equals("/")) {
+			else if(priority(arr[i]) >= 1) {
+				// 연산자인 경우
 				while(!st.isEmpty() && 
 					priority(arr[i]) <= priority(st.peek())) {
 					System.out.print(st.pop());
