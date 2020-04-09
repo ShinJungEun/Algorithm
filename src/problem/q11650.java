@@ -1,4 +1,4 @@
-package boj;
+package problem;
 
 import java.awt.Point;
 import java.util.Scanner;
