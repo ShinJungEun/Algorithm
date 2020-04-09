@@ -26,21 +26,6 @@ public class q11650 {
 
 	}
 
-	// insertion sort를 활용한 Y좌표 정렬
-	public static void insertionSort(Point[] p) {
-		Point key;
-
-		for(int i = 1; i < p.length; i++) {
-			key = p[i];
-			int j = i - 1;
-			while(j >= 0 && key.getX() == p[j].getX() && key.getY() < p[j].getY()) {
-				p[j + 1] = p[j];
-				j--;
-			}
-			p[j + 1] = key;
-		}
-	}
-
 	// quick sort를 활용한 X좌표 정렬
 	public static void quickSortX(Point[] p, int start, int end) {
 		// 원소가 한 개인 경우
@@ -75,6 +60,21 @@ public class q11650 {
 		
 		quickSortX(p, start, right - 1);
 		quickSortX(p, right + 1, end);
+	}
+	
+	// insertion sort를 활용한 Y좌표 정렬
+	public static void insertionSort(Point[] p) {
+		Point key;
+
+		for(int i = 1; i < p.length; i++) {
+			key = p[i];
+			int j = i - 1;
+			while(j >= 0 && key.getX() == p[j].getX() && key.getY() < p[j].getY()) {
+				p[j + 1] = p[j];
+				j--;
+			}
+			p[j + 1] = key;
+		}
 	}
 	
 }
