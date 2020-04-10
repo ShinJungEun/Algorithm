@@ -2,7 +2,7 @@ package problem;
 
 import java.util.Scanner;
 
-public class p5543 {
+public class 5543 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
